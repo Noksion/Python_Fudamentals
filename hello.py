@@ -13,7 +13,4 @@ def is_prime(num):
 
 for i in range(0, 100):
     if is_prime(i):
-        print (str(i) + ' is a prime number')
-
-
-
+        print(str(i) + ' is a prime number')
