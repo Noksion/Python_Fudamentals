@@ -7,7 +7,7 @@ for i in range(0, 100):
             x = x + 1
         else:
             x = x + 1
-    if c == True:
+    if c is True:
         print(str(i) + 'is a prime number')
     else:
         pass
