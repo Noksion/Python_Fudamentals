@@ -1,4 +1,4 @@
-for i in range(0, 100):
+for i in range(1, 10):
     x = 2
     c = True
     while i > x:
@@ -8,6 +8,7 @@ for i in range(0, 100):
         else:
             x = x + 1
     if c is True:
-        print(str(i) + 'is a prime number')
+        print(str(i) + ' is a prime number')
+        print(str(i) + ' является простым числом')
     else:
         pass
