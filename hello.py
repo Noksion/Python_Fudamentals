@@ -1,9 +1,8 @@
-num = 11
-for i in range (1, num -1):
-    c = True
-    if num % i !=0:
-        i = i+1
+num = 4
+for i in range (2, num -1):
+    if num % i == 0:
+        print (str (num) + ' is not a prime number')
+        break
     else:
-        c = False
-
-
+        print (str (num) + ' is a prime number')
+        break
