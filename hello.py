@@ -4,8 +4,8 @@ def is_prime(num):
     if num <= 3:
         return True
 
-    for i in range(2, num - 1):
-        if num % i == 0:
+    for n in range(2, num - 1):
+        if num % n == 0:
             return False
         else:
             return True
