@@ -1,10 +1,12 @@
 # Игра в угадывание чисел.
 # Когда освою генератор рандомных чисел - значение переменной check будет генерироваться им
 # И можно будет полноценно играть.
+import random
+
+check = random.randint(1, 30)
 
 while True:
     digit = int(input('Try to guess the number: '))
-    check = 37
 
     if digit < check:
         print('Too low, try again!')
