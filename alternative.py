@@ -1,7 +1,6 @@
 name1 = int(input("Please enter lower: "))
 name2 = int(input("Please enter upper: "))
 
-
 for i in range(name1, name2):
     x = 2
     c = True
@@ -13,10 +12,5 @@ for i in range(name1, name2):
             x = x + 1
     if c is True:
         print(str(i) + ' is a prime number')
-    else:
-        pass
-
-    if c is True:
-        print(str(i) + ' является простым числом')
     else:
         pass
