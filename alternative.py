@@ -1,7 +1,7 @@
 name1 = int(input("Please enter lower: "))
 name2 = int(input("Please enter upper: "))
 
-for i in range(name1, name2):
+for i in range(name1, 1 + name2):
     x = 2
     c = True
     while i > x:
