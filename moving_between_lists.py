@@ -6,6 +6,7 @@ while to_do:
     print('Verifying ' + verify.title() + "...")
     done.append(verify)
 
+done.sort()
 print('\nThe following actions were successfully performed: ')
 for i in done:
     print(' - ' + i.title())
