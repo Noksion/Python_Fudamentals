@@ -4,14 +4,14 @@ print(sum(dig))
 
 games = ['Wow', 'Diablo', 'StarCraft']
 for i in games:
-   print("I have played the game of " + i.upper() + ' for about a decade')
+    print("I have played the game of " + i.upper() + ' for about a decade')
 
 
 numbers = [i**3 for i in range(1, 11)]
 print((sum(numbers)))
 
 
-m_list = ['English', 'Ukrainian', 'Russain']
+m_list = ['English', 'Ukrainian', 'Russian']
 y_list = m_list[:]
 m_list.append('Spanish')
 y_list.append('German')
