@@ -2,9 +2,11 @@
 import random
 
 check = random.randint(1, 31)
+attempts = 0
 
 while True:
     digit = int(input('Try to guess the number: '))
+    attempts += 1
 
     if digit < check:
         print('Too low, try again!')
@@ -13,5 +15,6 @@ while True:
         print('Too high, try again!')
 
     if digit == check:
-        print("That's correct! Have a nice time!")
+        print("\nThat's correct! It took you " + str(attempts) + " attempts to hit the right number."
+                                                                 "\n\t Have a nice time!")
         break
