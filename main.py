@@ -13,11 +13,14 @@ def describe_pet(animal_type, pet_name='Tom'):
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 
-def formatted_name(first_name, last_name):
-    process = first_name + " " + last_name
+def formatted_name(first_name, last_name, middle_name=''):
+    if middle_name:
+        process = first_name + " " + middle_name + " " + last_name
+    else:
+        process = first_name + " " + last_name
     return process.title()
 
 
 scientist = formatted_name('albert', 'einstein')
-print(formatted_name('ruslan', 'olkhovsky'))
+print(formatted_name('ruslan', 'olkhovsky', 'bogdanovich'))
 print(scientist)
