@@ -6,11 +6,18 @@ def bmi():
     print("your Body Mass Index is: " + str(result))
 
 
-# Below is the example of default value in the function argument
+# describe_pet is an example of default value in the function argument
 def describe_pet(animal_type, pet_name='Tom'):
     """Display information about a pet."""
     print("\nI have a " + animal_type + ".")
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 
-describe_pet('Cat')
+def formatted_name(first_name, last_name):
+    process = first_name + " " + last_name
+    return process.title()
+
+
+scientist = formatted_name('albert', 'einstein')
+print(formatted_name('ruslan', 'olkhovsky'))
+print(scientist)
