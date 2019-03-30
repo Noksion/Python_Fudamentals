@@ -4,7 +4,6 @@ num1 = int(input("Please enter lowest number: "))
 num2 = int(input("Please enter highest number: "))
 
 
-# noinspection PyShadowingNames
 def prime_gen(name1, name2):
     prime_list = []
     if name1 < 1:
