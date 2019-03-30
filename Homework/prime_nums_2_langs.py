@@ -7,6 +7,9 @@ num2 = int(input("Please enter highest number: "))
 # noinspection PyShadowingNames
 def prime_gen(name1, name2):
     prime_list = []
+    if name1 < 1:
+        print('Please try again and provide number that is >= 1')
+        return False
     for k in range(name1, 1 + name2):
         x = 2
         c = True
