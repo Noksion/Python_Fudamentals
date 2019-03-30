@@ -1,10 +1,10 @@
-favorite_languages = {
+favorite_language = {
  'jen': 'python',
  'sarah': 'c',
  'edward': 'ruby',
  'phil': 'python',
  }
-for i in set(favorite_languages.values()):
+for i in set(favorite_language.values()):
     print(i.title())
 
 
@@ -18,5 +18,3 @@ for name, languages in favorite_languages.items():
     print("\n" + name.title() + "'s favorite languages are:")
     for i in languages:
         print("\t" + i.title())
-
-
