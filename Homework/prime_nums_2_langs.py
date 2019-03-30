@@ -27,9 +27,10 @@ def prime_gen(name1, name2):
 
 material = prime_gen(num1, num2)
 
-print('')
-for i in material:
-    print(str(i) + ' is a prime number')
-print('')
-for i in material:
-    print(str(i) + ' Является простым числом')
+if material:
+    print('')
+    for i in material:
+        print(str(i) + ' is a prime number')
+    print('')
+    for i in material:
+        print(str(i) + ' Является простым числом')
