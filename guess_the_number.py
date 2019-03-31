@@ -3,7 +3,7 @@ import random
 
 
 def game():
-    check = random.randint(1, 100)
+    check = random.randint(1, 10)
     attempts = 0
 
     while True:
@@ -21,5 +21,3 @@ def game():
                                                                      "\n\t Have a nice time!")
             break
 
-
-game()
