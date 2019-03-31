@@ -1,9 +1,9 @@
-import guess_the_number
+import guess_the_number as g
 
 
 def game():
-    print("Let's play the game!")
+    print("\n\tLet's play the game!\n")
 
 
 game()
-guess_the_number.game()
+g.game()
