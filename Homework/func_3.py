@@ -2,8 +2,8 @@
 # и возвращает все аргументы, кроме первого.
 
 
-def no_first(skip, *args):
-    return args
+def no_first(*args):
+    return args[1:]
 
 
 check = no_first(1, 2, 3, 4, 5)
