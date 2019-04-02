@@ -4,4 +4,4 @@
 def get_last(*args):
     return args[-1]
 
-# get_last(1, 2, 3, 4, 5, 6, 18)
+

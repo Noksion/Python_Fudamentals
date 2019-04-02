@@ -5,22 +5,18 @@ class Dog:
         """Initialize name and age attributes."""
         self.name = name
         self.age = age
-        self.internal_value = 42
 
     def sit(self):
         """Simulate a dog sitting in response to a command."""
         print(self.name.title() + " is now sitting.")
 
-    def print_age(self):
-        """Simulate a dog sitting in response to a command."""
-        print(self.name.title() + " is " + str(self.age) + " years old.")
+    def roll_over(self):
+        """Simulate rolling over in response to a command."""
+        print(self.name.title() + " rolled over!")
 
 
-corgi = Dog('Rex', 6)
-corgi2 = Dog('Missy', 2)
-
-corgi.sit()
-corgi.print_age()
-print("\n")
-corgi2.sit()
-corgi2.print_age()
+my_dog = Dog('willie', 6)
+print("My dog's name is " + my_dog.name.title() + ".")
+print("My dog is " + str(my_dog.age) + " years old.")
+my_dog.sit()
+my_dog.roll_over()
