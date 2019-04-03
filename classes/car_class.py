@@ -31,3 +31,34 @@ class Car:
         self.odometer_reading += miles
 
 
+class Battery:
+    """A simple attempt to model a battery for an electric car."""
+    def __init__(self, battery_size=70):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print("This car has a " + str(self.battery_size) + "-kWh battery.")
+
+    def upgrade_battery(self, amount=15):
+        self.battery_size += amount
+        print('The battery was upgraded')
+
+
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+    def __init__(self, brand, model, year):
+        """
+         Initialize attributes of the parent class.
+         Then initialize attributes specific to an electric car.
+         """
+        super().__init__(brand, model, year)
+        self.battery = Battery()
+
+
+tesla = ElectricCar('Tesla', 'Voltage', 2017)
+print(tesla.get_descriptive_name())
+tesla.battery.describe_battery()
+tesla.battery.upgrade_battery(25)
+tesla.battery.describe_battery()
