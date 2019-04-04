@@ -23,3 +23,4 @@ sq = []
 for v in range(1, 11):
         v = v ** 2
         sq.append(v)
+

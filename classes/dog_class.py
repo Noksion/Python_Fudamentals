@@ -1,3 +1,6 @@
+import classes.car_class
+
+
 class Dog:
     """A simple attempt to model a dog."""
 
@@ -15,8 +18,8 @@ class Dog:
         print(self.name.title() + " rolled over!")
 
 
-my_dog = Dog('willie', 6)
-print("My dog's name is " + my_dog.name.title() + ".")
-print("My dog is " + str(my_dog.age) + " years old.")
-my_dog.sit()
-my_dog.roll_over()
+my = classes.car_class.Car('Chevrolet', 'Camaro', 1995)
+print(my.get_descriptive_name())
+
+mo = classes.car_class.ElectricCar('Tesla', 'Voltage', 2015)
+print(mo.get_descriptive_name())

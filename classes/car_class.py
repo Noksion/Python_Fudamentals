@@ -1,3 +1,6 @@
+"""A set of classes used to represent gas and electric cars."""
+
+
 class Car:
     """A simple attempt to represent the car"""
     def __init__(self, brand, model, year):
@@ -63,9 +66,10 @@ class ElectricCar(Car):
         super().__init__(brand, model, year)
         self.battery = Battery()
 
-
+'''
 tesla = ElectricCar('Tesla', 'Voltage', 2017)
 print(tesla.get_descriptive_name())
 tesla.battery.get_range()
 tesla.battery.upgrade_battery()
 tesla.battery.get_range()
+'''
