@@ -1,6 +1,3 @@
-import classes.car_class
-
-
 class Dog:
     """A simple attempt to model a dog."""
 
