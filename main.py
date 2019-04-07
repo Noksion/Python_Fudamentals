@@ -42,5 +42,6 @@ def build_profile(first, last, **user_info):
     return profile
 
 
-user_profile = build_profile('albert', 'einstein', location='princeton', field='physics', age=58)
-print(user_profile['last_name'])
+with open('pi.txt') as file_object:
+    contents = file_object.read()
+    print(contents)
