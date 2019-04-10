@@ -6,3 +6,12 @@ def bmi():
     print("your Body Mass Index is: " + str(result))
 
 
+num1 = input('First number: ')
+num2 = input('Second number:')
+
+try:
+    sum = int(num1) + int(num2)
+except ValueError:
+    print('Please enter numbers, not words')
+else:
+    print(sum)
