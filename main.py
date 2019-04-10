@@ -6,9 +6,3 @@ def bmi():
     print("your Body Mass Index is: " + str(result))
 
 
-
-
-with open('pi.txt') as file_object:
-    lines = file_object.read()
-
-print(lines.rstrip())
