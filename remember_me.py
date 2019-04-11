@@ -23,15 +23,21 @@ def get_new_username():
     return username
 
 
+def check_user():
+    username = str(get_stored_name())
+    check = input("Last login was as " + username + ". Is that you? (Yes / No): ")
+    if check.lower() == 'yes':
+        return True
+    else:
+        return None
+
+
 def greet_user():
     """Greet the user by name"""
-    username = get_stored_name()
-    if username:
-        check = input("Last login was as " + username + ". Is that you? (Yes / No): ")
-        if check.lower() == 'yes':
-            print('Welcome back, ' + username + '!')
-        else:
-            username = get_new_username()
+    if check_user():
+        username = get_stored_name()
+        print('Welcome back, ' + username + '!')
+
     else:
         username = get_new_username()
         print("We'll remember you when you come back, " + username + '!')
