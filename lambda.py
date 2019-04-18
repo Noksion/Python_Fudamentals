@@ -2,8 +2,6 @@ def myfunc(n):
     return lambda a: a * n
 
 
-mydoubler = myfunc(2)
-mytripler = myfunc(3)
+def order_of_sum(n):
+    return lambda a, b: (a + b)**n
 
-print(mydoubler(11))
-print(mytripler(11))
