@@ -11,17 +11,17 @@ class Dice:
         print(randint(1, self.sides))
 
 
-billy = Dice()
-dilly = Dice(10)
-gilly = Dice(20)
+dice_6 = Dice()
+dice_10= Dice(10)
+dice_20 = Dice(20)
 
 for i in range(1, 11):
-    billy.roll_the_dice()
-
-print('')
-for i in range(1, 11):
-    dilly.roll_the_dice()
+    dice_6.roll_the_dice()
 
 print('')
 for i in range(1, 11):
-    gilly.roll_the_dice()
+    dice_10.roll_the_dice()
+
+print('')
+for i in range(1, 11):
+    dice_20.roll_the_dice()
